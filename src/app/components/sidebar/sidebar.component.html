@@ -4,14 +4,14 @@
   <section>
     <nav>
       <ul>
-        <li>
+        <li [class.active]="currentRoute === '/dashboard'">
           <a href="/dashboard">
-            <fa-icon [icon]="icon.tachometerAlt"></fa-icon> dashboard
+            <fa-icon [icon]="icon.tachometerAlt" class="icon"></fa-icon> dashboard
           </a>
         </li>
-        <li>
+        <li [class.active]="currentRoute === '/layouts'">
           <a href="/layouts">
-            <fa-icon [icon]="icon.columns"></fa-icon> layouts
+            <fa-icon [icon]="icon.columns" class="icon"></fa-icon> layouts
           </a>
           <!-- <a routerLink="/layouts">layouts</a> -->
         </li>

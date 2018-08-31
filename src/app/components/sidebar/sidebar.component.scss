@@ -23,10 +23,42 @@
           padding-top: 0.5rem;
           padding-bottom: 0.5rem;
           padding-left: 1rem;
+          cursor: pointer;
+
+          &.active {
+            border-right: 5px solid #dd0031;
+
+            &:hover {
+              border-right: 5px solid #dd0031;
+            }
+
+            a {
+              font-weight: 600;
+
+              .icon {
+                // color: #0072c3;
+                color: #343a40;
+              }
+            }
+          }
+
+          &:hover {
+            border-right: 5px solid #ababab;
+
+            a {
+              .icon {
+                color: #343a40;
+              }
+            }
+          }
 
           a {
             text-transform: capitalize;
             color: #343a40;
+
+            .icon {
+              color: #ababab;
+            }
           }
         }
       }
