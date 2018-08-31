@@ -9,8 +9,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './/app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { MainComponent } from './components/main/main.component';
+import { MainComponent } from './components/views/main/main.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LayoutsComponent } from './components/views/layouts/layouts.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     SidebarComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    LayoutsComponent
   ],
   imports: [
     BrowserModule,
