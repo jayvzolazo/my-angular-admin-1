@@ -5,7 +5,10 @@ import { Location } from '@angular/common';
 import {
   faTachometerAlt,
   faColumns,
-  faPuzzlePiece
+  faPuzzlePiece,
+  faFileAlt,
+  faThLarge,
+  faFont
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -20,7 +23,10 @@ export class SidebarComponent implements OnInit {
   icon = {
     tachometerAlt: faTachometerAlt,
     columns: faColumns,
-    puzzlePiece: faPuzzlePiece
+    puzzlePiece: faPuzzlePiece,
+    fileAlt: faFileAlt,
+    thLarge: faThLarge,
+    font: faFont
   };
 
   constructor(
