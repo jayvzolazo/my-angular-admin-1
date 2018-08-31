@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-size: 13px !important;
+}
+
 a {
   &:hover {
     text-decoration: none;
@@ -8,5 +12,6 @@ a {
 .main {
   .body {
     padding: 1rem;
+    height: -webkit-fill-available;
   }
 }

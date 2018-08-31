@@ -4,25 +4,24 @@
   <section>
     <nav>
       <ul>
-        <li [class.active]="currentRoute === '/dashboard'">
+        <li [class.active]="currentRoute === '/dashboard' || currentRoute === '/'">
           <a href="/dashboard">
-            <fa-icon [icon]="icon.tachometerAlt" class="icon"></fa-icon> dashboard
+            <span><fa-icon [icon]="icon.tachometerAlt" class="icon"></fa-icon></span> dashboard
           </a>
         </li>
         <li [class.active]="currentRoute === '/layouts'">
           <a href="/layouts">
-            <fa-icon [icon]="icon.columns" class="icon"></fa-icon> layouts
+            <span><fa-icon [icon]="icon.columns" class="icon"></fa-icon></span> layouts
           </a>
           <!-- <a routerLink="/layouts">layouts</a> -->
         </li>
       </ul>
       <h6 class="side-menu-header">interfaces</h6>
       <ul>
-        <li>
-          <a href="/general">general</a>
-        </li>
-        <li>
-          <a href="#">components</a>
+        <li [class.active]="currentRoute === '/components'">
+          <a href="/components">
+            <span><fa-icon [icon]="icon.puzzlePiece" class="icon"></fa-icon></span> components
+          </a>
         </li>
       </ul>
       <h6 class="side-menu-header">pages</h6>

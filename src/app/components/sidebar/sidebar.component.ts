@@ -2,7 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { faTachometerAlt, faColumns } from '@fortawesome/free-solid-svg-icons';
+import {
+  faTachometerAlt,
+  faColumns,
+  faPuzzlePiece
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidebar',
@@ -16,6 +20,7 @@ export class SidebarComponent implements OnInit {
   icon = {
     tachometerAlt: faTachometerAlt,
     columns: faColumns,
+    puzzlePiece: faPuzzlePiece
   };
 
   constructor(

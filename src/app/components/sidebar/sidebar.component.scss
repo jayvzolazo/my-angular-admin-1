@@ -36,9 +36,11 @@
             a {
               font-weight: 600;
 
-              .icon {
-                // color: #0072c3;
-                color: #343a40;
+              span {
+                .icon {
+                  // color: #0072c3;
+                  color: #343a40;
+                }
               }
             }
           }
@@ -48,8 +50,10 @@
             background-color: #e2e2e2;
 
             a {
-              .icon {
-                color: #343a40;
+              span {
+                .icon {
+                  color: #343a40;
+                }
               }
             }
           }
@@ -59,8 +63,13 @@
             color: #343a40;
             display: block;
 
-            .icon {
-              color: #ababab;
+            span {
+              width: 20px;
+              display: -webkit-inline-box;
+              
+              .icon {
+                color: #ababab;
+              }
             }
           }
         }
