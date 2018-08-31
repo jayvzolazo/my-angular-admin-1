@@ -27,6 +27,7 @@
 
           &.active {
             border-right: 5px solid #dd0031;
+            background-color: #e2e2e2;
 
             &:hover {
               border-right: 5px solid #dd0031;
@@ -44,6 +45,7 @@
 
           &:hover {
             border-right: 5px solid #ababab;
+            background-color: #e2e2e2;
 
             a {
               .icon {
@@ -55,6 +57,7 @@
           a {
             text-transform: capitalize;
             color: #343a40;
+            display: block;
 
             .icon {
               color: #ababab;
