@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  title = 'Angular Admin';
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

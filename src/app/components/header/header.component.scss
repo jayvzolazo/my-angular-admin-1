@@ -1,3 +1,22 @@
 .navbar {
   height: 3.5rem;
+  padding: 0 !important;
+
+  .navbar-brand-container {
+    height: 100%;
+    width: 15rem;
+    background-color: #2a2f33;
+    padding-top: 0.4rem;
+    padding-left: 0.9rem;
+
+    .navbar-brand {
+      img {
+        vertical-align: top;
+      }
+    }
+  }
+
+  .navbar-nav {
+    margin-left: 0.5rem;
+  }
 }

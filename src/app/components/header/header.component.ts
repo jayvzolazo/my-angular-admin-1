@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  brand = 'ngular Admin';
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
