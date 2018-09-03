@@ -2,7 +2,7 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <p>
+  <div>
     <!-- <ngb-alert [dismissible]="false">
       <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </ngb-alert>
@@ -10,6 +10,35 @@
     <ngb-alert type="success" [dismissible]="false">
       <strong>Warning!</strong> Better check yourself, you're not looking too good.
     </ngb-alert> -->
-    Here’s what’s happening with your business today.
-  </p>
+    <p>Here’s what’s happening with your business today.</p>
+  </div>
+
+  <div class="row metrics">
+    <div class="col">
+      <h6>
+        <span><fa-icon [icon]="icon.users"></fa-icon></span> teams
+      </h6>
+      <div>
+        <span class="count">8</span>
+      </div>
+    </div>
+    <div class="col">
+      <h6><span><fa-icon [icon]="icon.codeBranch"></fa-icon></span> projects</h6>
+      <div>
+        <span class="count">18</span>
+      </div>
+    </div>
+    <div class="col">
+      <h6><span><fa-icon [icon]="icon.tasks"></fa-icon></span> active tasks</h6>
+      <div>
+        <span class="count">48</span>
+      </div>
+    </div>
+    <div class="col">
+        <h6><span><fa-icon [icon]="icon.tasks"></fa-icon></span> finished tasks</h6>
+        <div>
+          <span class="count">10</span>
+        </div>
+      </div>
+  </div>
 </div>
