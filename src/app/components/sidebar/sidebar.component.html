@@ -3,7 +3,7 @@
   <p>The Epcot Center is a theme park in Disney World, Florida.</p> -->
   <section>
     <nav>
-      <ul>
+      <ul class="parent-nav">
         <li [class.active]="currentRoute === '/dashboard' || currentRoute === '/'">
           <a href="/dashboard">
             <span><fa-icon [icon]="icon.tachometerAlt" class="icon"></fa-icon></span> dashboard
@@ -17,7 +17,7 @@
         </li>
       </ul>
       <h6 class="side-menu-header">interfaces</h6>
-      <ul>
+      <ul class="parent-nav">
         <li [class.active]="currentRoute === '/components'">
           <a href="/components">
             <span><fa-icon [icon]="icon.puzzlePiece" class="icon"></fa-icon></span> components

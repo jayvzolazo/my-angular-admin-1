@@ -15,7 +15,7 @@
         font-weight: bold;
       }
 
-      ul {
+      .parent-nav {
         padding: 0;
 
         li {
@@ -69,6 +69,10 @@
                 color: #ababab;
               }
             }
+          }
+
+          .child-nav {
+            padding-right: 0;
           }
         }
       }
