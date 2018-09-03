@@ -16,7 +16,88 @@
     }
   }
 
-  .navbar-nav {
-    margin-left: 0.5rem;
+  #navbarNav {
+    display: block !important;
+    height: 100%;
+
+    .navbar-nav {
+      margin-right: 1rem;
+      float: right;
+      height: 100%;
+
+      .account-photo {
+        margin-top: 0.25rem;
+        margin-left: 0.5rem;
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        display: inline-block;
+        
+        img {
+          max-width: 100%;
+          height: 100%;
+          border-radius: 4rem;
+          position: absolute;
+          top: 0;
+          left: 0;;
+        }
+      }
+
+      .account {
+        margin-left: 0.7rem;
+        display: inline-block;
+        max-width: 15rem;
+        flex: 1;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        position: absolute;
+        // padding-right: 3rem;
+
+        span {
+          display: block;
+
+          &.name {
+            font-weight: bold;
+          }
+
+          &.position {
+            font-size: 11px;
+          }
+        }
+      }
+
+      .nav-item {
+        .nav-link {
+          cursor: pointer;
+        }
+
+        &.dropdown {
+          border-left: 1px solid #2a2f33;
+          width: 15rem;
+        }
+      }
+    }
+  }
+}
+
+ul.dd-menu {
+  margin-bottom: 0;
+  padding: 0;
+
+  li.dd-item {
+    list-style: none;
+    // padding-top: 0.3rem;
+    // padding-bottom: 0.3rem;
+    padding: 0.5rem 0.75rem;
+
+    &:hover {
+      background-color: #ececec;
+      transition: 0.3s;
+    }
+
+    .dd-link {
+      cursor: pointer;
+      display: block;
+    }
   }
 }

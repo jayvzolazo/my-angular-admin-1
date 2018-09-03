@@ -15,3 +15,17 @@ a {
     height: -webkit-fill-available;
   }
 }
+
+.navbar-dropdown {
+  border: 1px solid #e2e2e2;
+  box-shadow: 0px 2px 6px #d6d6d6;
+  width: 15rem;
+
+  .arrow {
+    left: 12% !important;
+  }
+
+  .popover-body {
+    padding: 0 !important;
+  }
+}
