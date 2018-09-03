@@ -1,3 +1,12 @@
+$inputSearchbg: #63696f;
+$white: #ffffff;
+$navBarGray: #2a2f33;
+
+@mixin onFocusForm($property) {
+  background: $property;
+  border-color: $property;
+}
+
 .navbar {
   height: 3.5rem;
   padding: 0 !important;
@@ -5,13 +14,46 @@
   .navbar-brand-container {
     height: 100%;
     width: 15rem;
-    background-color: #2a2f33;
+    background-color: $navBarGray;
     padding-top: 0.4rem;
     padding-left: 0.9rem;
 
     .navbar-brand {
       img {
         vertical-align: top;
+      }
+    }
+  }
+
+  .nav-formsearch {
+    margin-left: 1rem;
+    width: 39rem;
+
+    .input-group {
+      .input-group-prepend {
+        .input-group-text {
+          @include onFocusForm($inputSearchbg);
+          color: $white;
+        }
+      }
+
+      .form-control {
+        @include onFocusForm($inputSearchbg);
+        font-size: 14px;
+        transition: 0.3s;
+
+        &::placeholder {
+          color: $white;
+        }
+
+        &:focus {
+          box-shadow: none !important;
+          @include onFocusForm($white);
+
+          &::placeholder {
+            color: $navBarGray !important;
+          }
+        }
       }
     }
   }
@@ -51,7 +93,6 @@
         -webkit-box-flex: 1;
         -ms-flex: 1;
         position: absolute;
-        // padding-right: 3rem;
 
         span {
           display: block;
@@ -72,7 +113,7 @@
         }
 
         &.dropdown {
-          border-left: 1px solid #2a2f33;
+          border-left: 1px solid $navBarGray;
           width: 15rem;
         }
       }
@@ -86,8 +127,6 @@ ul.dd-menu {
 
   li.dd-item {
     list-style: none;
-    // padding-top: 0.3rem;
-    // padding-bottom: 0.3rem;
     padding: 0.5rem 0.75rem;
 
     &:hover {
