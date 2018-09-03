@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   year = '2018';
+  build = 'Angular v6.1.6 | Angular CLI v6.1.5';
 
   constructor() { }
 

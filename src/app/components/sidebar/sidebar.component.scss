@@ -24,6 +24,7 @@
           padding-bottom: 0.5rem;
           padding-left: 1rem;
           cursor: pointer;
+          transition: 0.3s;
 
           &.active {
             border-right: 5px solid #dd0031;
@@ -38,7 +39,6 @@
 
               span {
                 .icon {
-                  // color: #0072c3;
                   color: #343a40;
                 }
               }

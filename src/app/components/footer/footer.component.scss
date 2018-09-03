@@ -1,8 +1,36 @@
+$defaultFontColor: #5a6870;
+
 .app-footer {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #5a6870;
+  color: $defaultFontColor;
+
+  .build {
+    font-size: 10px;
+    color: $defaultFontColor;
+    line-height: 1.5rem;
+  }
+
+  .sitemap {
+    ul {
+      padding: 0;
+
+      li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 0.5rem;
+
+        a {
+          color: $defaultFontColor;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
