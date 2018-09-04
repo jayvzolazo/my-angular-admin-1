@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
+  model = {
+    left: true,
+    middle: false,
+    right: false
+  };
+
+  radioModel = 1;
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

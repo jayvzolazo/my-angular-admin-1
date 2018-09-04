@@ -1,5 +1,94 @@
 <div class="clearfix" id="buttons">
-  <p>
-    buttons works!
-  </p>
+  <h5>Buttons</h5>
+  <p>Button Styling according to bootsraps</p>
+  <div class="row">
+    <div class="col">
+      <div class="stacked-box">
+        <div class="box-item">
+          <h6 class="box-title">Colors</h6>
+          <div class="box-content">
+            <button type="button" class="mr-2 mb-3 btn btn-primary">Button</button>
+            <button type="button" class="mr-2 mb-3 btn btn-secondary">Button</button>
+            <button type="button" class="mr-2 mb-3 btn btn-success">Button</button>
+            <button type="button" class="mr-2 mb-3 btn btn-danger">Button</button>
+            <button type="button" class="mr-2 mb-3 btn btn-warning">Button</button>
+            <button type="button" class="mr-2 mb-3 btn btn-info">Button</button>
+            <button type="button" class="mr-2 mb-3 btn btn-light">Button</button>
+            <button type="button" class="mr-2 mb-3 btn btn-dark">Button</button>
+            <button type="button" class="mr-2 mb-3 btn btn-link">Button</button>
+            <button type="button" class="mr-2 mb-3 btn btn-default">Button</button>
+          </div>
+        </div>
+        <div class="box-item">
+          <h6 class="box-title">Disabled Buttons</h6>
+          <div class="box-content">
+            <button type="button" class="mr-2 mb-3 btn btn-primary" disabled>Disabled</button>
+            <button type="button" class="mr-2 mb-3 btn btn-secondary" disabled>Disabled</button>
+            <button type="button" class="mr-2 mb-3 btn btn-success" disabled>Disabled</button>
+            <button type="button" class="mr-2 mb-3 btn btn-danger" disabled>Disabled</button>
+            <button type="button" class="mr-2 mb-3 btn btn-warning" disabled>Disabled</button>
+            <button type="button" class="mr-2 mb-3 btn btn-info" disabled>Disabled</button>
+            <button type="button" class="mr-2 mb-3 btn btn-light" disabled>Disabled</button>
+            <button type="button" class="mr-2 mb-3 btn btn-dark" disabled>Disabled</button>
+            <button type="button" class="mr-2 mb-3 btn btn-link" disabled>Disabled</button>
+            <button type="button" class="mr-2 mb-3 btn btn-default" disabled>Disabled</button>
+          </div>
+        </div>
+        <div class="box-item">
+          <h6 class="box-title">Outlined Buttons</h6>
+          <div class="box-content">
+            <button type="button" class="mr-2 mb-3 btn btn-outline-primary">Outline</button>
+            <button type="button" class="mr-2 mb-3 btn btn-outline-secondary">Outline</button>
+            <button type="button" class="mr-2 mb-3 btn btn-outline-success">Outline</button>
+            <button type="button" class="mr-2 mb-3 btn btn-outline-danger">Outline</button>
+            <button type="button" class="mr-2 mb-3 btn btn-outline-warning">Outline</button>
+            <button type="button" class="mr-2 mb-3 btn btn-outline-info">Outline</button>
+            <button type="button" class="mr-2 mb-3 btn btn-outline-light">Outline</button>
+            <button type="button" class="mr-2 mb-3 btn btn-outline-dark">Outline</button>
+            <button type="button" class="mr-2 mb-3 btn btn-outline-link">Outline</button>
+            <button type="button" class="mr-2 mb-3 btn btn-outline-default">Outline</button>
+          </div>
+        </div>
+        <div class="box-item">
+          <h6 class="box-title">Button sizes</h6>
+          <div class="box-content">
+            <button type="button" class="mr-2 mb-3 btn btn-primary btn-lg">Button Large</button>
+            <button type="button" class="mr-2 mb-3 btn btn-secondary btn-md">Button Medium</button>
+            <button type="button" class="mr-2 mb-3 btn btn-success btn-sm">Button Small</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="stacked-box">
+        <div class="box-item">
+          <div class="btn-group btn-group-toggle">
+            <label class="btn-default" ngbButtonLabel>
+              <input type="checkbox" ngbButton [(ngModel)]="model.left"> Active
+            </label>
+            <label class="btn-default" ngbButtonLabel>
+              <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Checkbox
+            </label>
+            <label class="btn-default" ngbButtonLabel>
+              <input type="checkbox" ngbButton [(ngModel)]="model.right"> Checkbox
+            </label>
+          </div>
+        </div>
+        <div class="box-item">
+          <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" [(ngModel)]="radioModel">
+            <label ngbButtonLabel class="btn-default">
+              <input ngbButton type="radio" [value]="1"> Active
+            </label>
+            <label ngbButtonLabel class="btn-default">
+              <input ngbButton type="radio" value="middle"> Radio
+            </label>
+            <label ngbButtonLabel class="btn-default">
+              <input ngbButton type="radio" [value]="false"> Radio
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
