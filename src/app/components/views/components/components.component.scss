@@ -1,0 +1,69 @@
+@mixin border($top, $right, $bottom, $left) {
+  border-top: $top;
+  border-right: $right;
+  border-bottom: $bottom;
+  border-left: $left;
+  border-style: solid;
+  border-color: #cccccc;
+}
+
+@mixin borderRadius($topLeft, $topRight, $botRight, $botLeft) {
+  border-top-left-radius: $topLeft;
+  border-top-right-radius: $topRight;
+  border-bottom-right-radius: $botRight;
+  border-bottom-left-radius: $botLeft;
+}
+
+@mixin boxColor($color) {
+  border-color: $color !important;
+  color: $color;
+}
+
+$defaultRadius: 0.5rem;
+$warning: #ffc107;
+$danger: #dd0031;
+$success: #28a745;
+$info: #17a2b8;
+
+.box {
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  border-radius: $defaultRadius;
+  padding: 1rem;
+
+  &.warning {
+    @include boxColor($warning);
+  }
+
+  &.danger {
+    @include boxColor($danger);
+  }
+
+  &.success {
+    @include boxColor($success);
+  }
+
+  &.info {
+    @include boxColor($info);
+  }
+}
+
+.stacked-box {
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  border-radius: $defaultRadius;
+  width: 100%;
+
+  .box-item {
+    padding: 1rem;
+    @include border(0, 0, 1px, 0);
+    
+    &:first-child {
+      @include borderRadius($defaultRadius, $defaultRadius, 0, 0);
+    }
+
+    &:last-child {
+      @include border(0, 0, 0, 0);
+  }
+  }
+}
