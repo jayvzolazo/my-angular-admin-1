@@ -8,7 +8,9 @@ import {
   faPuzzlePiece,
   faFileAlt,
   faThLarge,
-  faFont
+  faFont,
+  faAngleRight,
+  faAngleDown
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -19,6 +21,7 @@ import {
 export class SidebarComponent implements OnInit {
 
   currentRoute: string;
+  componentsShown = false;
 
   icon = {
     tachometerAlt: faTachometerAlt,
@@ -26,7 +29,9 @@ export class SidebarComponent implements OnInit {
     puzzlePiece: faPuzzlePiece,
     fileAlt: faFileAlt,
     thLarge: faThLarge,
-    font: faFont
+    font: faFont,
+    angleRight: faAngleRight,
+    angleDown: faAngleDown
   };
 
   constructor(
@@ -36,8 +41,14 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.currentRoute = window.location.pathname;
-    console.log('current path:', this.currentRoute);
   }
 
+  toggleComponents(): void {
+    this.componentsShown = !this.componentsShown;
+  }
+
+  onNavClick(): void {
+    this.currentRoute = window.location.pathname;
+  }
 }
 

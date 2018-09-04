@@ -1,3 +1,7 @@
+$activeFontColor: #343a40;
+$activeNavBG: #e2e2e2;
+$activeBorder: #dd0031;
+
 .app-sidebar {
   position: fixed;
   top: 3.5rem;
@@ -20,46 +24,14 @@
 
         li {
           list-style: none;
-          padding: 0.8rem 1rem;
           cursor: pointer;
-          transition: 0.3s;
-
-          &.active {
-            border-right: 5px solid #dd0031;
-            background-color: #e2e2e2;
-
-            &:hover {
-              border-right: 5px solid #dd0031;
-            }
-
-            a {
-              font-weight: 600;
-
-              span {
-                .icon {
-                  color: #343a40;
-                }
-              }
-            }
-          }
-
-          &:hover {
-            border-right: 5px solid #ababab;
-            background-color: #e2e2e2;
-
-            a {
-              span {
-                .icon {
-                  color: #343a40;
-                }
-              }
-            }
-          }
 
           a {
             text-transform: capitalize;
-            color: #343a40;
+            color: $activeFontColor;
             display: block;
+            padding: 0.8rem 1rem;
+            transition: 0.3s;
 
             span {
               width: 20px;
@@ -68,11 +40,49 @@
               .icon {
                 color: #ababab;
               }
+
+              &.icon-has-child {
+                float: right;
+                width: 0.5rem;
+              }
+            }
+
+            &.active {
+              border-right: 5px solid $activeBorder;
+              background-color: $activeNavBG;
+              font-weight: 600;
+
+              span {
+                .icon {
+                  color: $activeFontColor;
+                }
+              }
+
+              &:hover {
+                border-right: 5px solid $activeBorder;
+              }
+            }
+
+            &:hover {
+              border-right: 5px solid #ababab;
+              background-color: $activeNavBG;
+              
+              span {
+                .icon {
+                  color: $activeFontColor;
+                }
+              }
             }
           }
 
           .child-nav {
-            padding-right: 0;
+            padding-left: 0;
+
+            li {
+              a {
+                padding-left: 2.5rem;
+              }
+            }
           }
         }
       }

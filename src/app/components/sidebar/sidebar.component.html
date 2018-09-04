@@ -4,13 +4,13 @@
   <section>
     <nav>
       <ul class="parent-nav">
-        <li [class.active]="currentRoute === '/dashboard' || currentRoute === '/'">
-          <a href="/dashboard">
+        <li>
+          <a href="/dashboard" [class.active]="currentRoute === '/dashboard' || currentRoute === '/'">
             <span><fa-icon [icon]="icon.tachometerAlt" class="icon"></fa-icon></span> dashboard
           </a>
         </li>
-        <li [class.active]="currentRoute === '/layouts'">
-          <a href="/layouts">
+        <li>
+          <a href="/layouts" [class.active]="currentRoute === '/layouts'">
             <span><fa-icon [icon]="icon.columns" class="icon"></fa-icon></span> layouts
           </a>
           <!-- <a routerLink="/layouts">layouts</a> -->
@@ -18,10 +18,24 @@
       </ul>
       <h6 class="side-menu-header">interfaces</h6>
       <ul class="parent-nav">
-        <li [class.active]="currentRoute === '/components'">
-          <a href="/components">
+        <li>
+          <a role="button" (click)="toggleComponents()" [class.active]="componentsShown">
             <span><fa-icon [icon]="icon.puzzlePiece" class="icon"></fa-icon></span> components
+            <span class="icon-has-child">
+              <fa-icon [icon]="icon.angleRight" *ngIf="!componentsShown"></fa-icon>
+              <fa-icon [icon]="icon.angleDown" *ngIf="componentsShown"></fa-icon>
+            </span>
           </a>
+          <div *ngIf="componentsShown">
+            <ul class="child-nav">
+              <li (click)="onNavClick()">
+                <a routerLink="/components/box" [class.active]="currentRoute === '/components/box'"> box </a>
+              </li>
+              <li (click)="onNavClick()">
+                <a routerLink="/components/buttons" [class.active]="currentRoute === '/components/buttons'"> buttons </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li [class.active]="currentRoute === '/forms'">
           <a href="/forms">
@@ -40,7 +54,7 @@
         </li>
       </ul>
       <h6 class="side-menu-header">utilities</h6>
-      <ul>
+      <ul class="parent-nav">
         <li><a href="#">borders</a></li>
         <li><a href="#">colors</a></li>
         <li><a href="#">sizing</a></li>

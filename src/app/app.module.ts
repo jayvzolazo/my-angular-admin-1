@@ -13,6 +13,8 @@ import { DashboardComponent } from './components/views/dashboard/dashboard.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutsComponent } from './components/views/layouts/layouts.component';
 import { ComponentsComponent } from './components/views/components/components.component';
+import { BoxComponent } from './components/views/components/box/box.component';
+import { ButtonsComponent } from './components/views/components/buttons/buttons.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ComponentsComponent } from './components/views/components/components.co
     DashboardComponent,
     FooterComponent,
     LayoutsComponent,
-    ComponentsComponent
+    ComponentsComponent,
+    BoxComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,
