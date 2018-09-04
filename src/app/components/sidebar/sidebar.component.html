@@ -4,13 +4,13 @@
   <section>
     <nav>
       <ul class="parent-nav">
-        <li>
-          <a href="/dashboard" [class.active]="currentRoute === '/dashboard' || currentRoute === '/'">
+        <li (click)="onNavClick()">
+          <a routerLink="/dashboard" [class.active]="currentRoute === '/dashboard' || currentRoute === '/'">
             <span><fa-icon [icon]="icon.tachometerAlt" class="icon"></fa-icon></span> dashboard
           </a>
         </li>
-        <li>
-          <a href="/layouts" [class.active]="currentRoute === '/layouts'">
+        <li (click)="onNavClick()">
+          <a routerLink="/layouts" [class.active]="currentRoute === '/layouts'">
             <span><fa-icon [icon]="icon.columns" class="icon"></fa-icon></span> layouts
           </a>
           <!-- <a routerLink="/layouts">layouts</a> -->
