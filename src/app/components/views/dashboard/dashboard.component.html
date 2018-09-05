@@ -3,42 +3,51 @@
     Welcome to {{ title }}!
   </h1>
   <div>
-    <!-- <ngb-alert [dismissible]="false">
-      <strong>Warning!</strong> Better check yourself, you're not looking too good.
-    </ngb-alert>
-
-    <ngb-alert type="success" [dismissible]="false">
-      <strong>Warning!</strong> Better check yourself, you're not looking too good.
-    </ngb-alert> -->
     <p>Here’s what’s happening with your business today.</p>
   </div>
 
-  <div class="row metrics">
-    <div class="col">
-      <h6>
-        <span><fa-icon [icon]="icon.users"></fa-icon></span> teams
-      </h6>
-      <div>
-        <span class="count">8</span>
-      </div>
-    </div>
-    <div class="col">
-      <h6><span><fa-icon [icon]="icon.codeBranch"></fa-icon></span> projects</h6>
-      <div>
-        <span class="count">18</span>
-      </div>
-    </div>
-    <div class="col">
-      <h6><span><fa-icon [icon]="icon.tasks"></fa-icon></span> active tasks</h6>
-      <div>
-        <span class="count">48</span>
-      </div>
-    </div>
-    <div class="col">
-        <h6><span><fa-icon [icon]="icon.tasks"></fa-icon></span> finished tasks</h6>
-        <div>
-          <span class="count">10</span>
+  <div class="stacked-box inline">
+    <div class="box-item">
+      <div class="box-content">
+        <div class="metrics">
+          <h6>
+            <span><fa-icon [icon]="icon.users"></fa-icon></span> teams
+          </h6>
+          <div>
+            <span class="count">8</span>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="box-item">
+      <div class="metrics">
+        <h6>
+          <span><fa-icon [icon]="icon.codeBranch"></fa-icon></span> projects
+        </h6>
+        <div>
+          <span class="count">28</span>
+        </div>
+      </div>
+    </div>
+    <div class="box-item">
+      <div class="metrics">
+        <h6>
+          <span><fa-icon [icon]="icon.tasks"></fa-icon></span> active tasks
+        </h6>
+        <div>
+          <span class="count">48</span>
+        </div>
+      </div>
+    </div>
+    <div class="box-item">
+      <div class="metrics">
+        <h6>
+          <span><fa-icon [icon]="icon.tasks"></fa-icon></span> completed tasks
+        </h6>
+        <div>
+          <span class="count">18</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

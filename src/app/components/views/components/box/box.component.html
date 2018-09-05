@@ -3,17 +3,10 @@
   <div class="box">This is a box</div>
   <div class="clearfix">&nbsp;</div>
 
-  <div class="box warning">This is a box with warning</div>
-  <div class="clearfix">&nbsp;</div>
-
-  <div class="box danger">This is a box in danger</div>
-  <div class="clearfix">&nbsp;</div>
-
-  <div class="box success">This is a successful box</div>
-  <div class="clearfix">&nbsp;</div>
-
-  <div class="box info">This is a information box</div>
-  <div class="clearfix">&nbsp;</div>
+  <div *ngFor="let box of boxes">
+    <div class="box {{ box.class }}">{{ box.title }} with {{ box.class }}</div>
+    <div class="clearfix">&nbsp;</div>
+  </div>
   
   <div class="clearfix">&nbsp;</div>
 
@@ -21,38 +14,34 @@
     <div class="col">
       <h5>Stacked Box</h5>
       <div class="stacked-box">
-        <div class="box-item">Box 1</div>
-        <div class="box-item">Box 2</div>
-        <div class="box-item">Box 3</div>
-        <div class="box-item">Box 4</div>
+        <div class="box-item" *ngFor="let box of boxes">{{ box.title }}</div>
       </div>
     </div>
 
     <div class="col">
       <h5>Stacked Box with content</h5>
       <div class="stacked-box">
-        <div class="box-item">
-          <h6 class="box-title">Box Title</h6>
+        <div class="box-item" *ngFor="let box of boxes">
+          <h6 class="box-title">{{ box.title }}</h6>
           <div class="box-content">
-            Box content goes here...
+            {{ box.content }}
           </div>
         </div>
-        <div class="box-item">
-          <h6 class="box-title">Box Title</h6>
+      </div>
+    </div>
+  </div>
+  
+  <div class="clearfix">&nbsp;</div>
+  <div class="clearfix">&nbsp;</div>
+
+  <div class="row">
+    <div class="col">
+      <h5>Inline Stacked Box</h5>
+      <div class="stacked-box inline">
+        <div class="box-item" *ngFor="let box of boxes">
+          <h6 class="box-title">{{ box.title }}</h6>
           <div class="box-content">
-            Box content goes here...
-          </div>
-        </div>
-        <div class="box-item">
-          <h6 class="box-title">Box Title</h6>
-          <div class="box-content">
-            Box content goes here...
-          </div>
-        </div>
-        <div class="box-item">
-          <h6 class="box-title">Box Title</h6>
-          <div class="box-content">
-            Box content goes here...
+            {{ box.content }}
           </div>
         </div>
       </div>
