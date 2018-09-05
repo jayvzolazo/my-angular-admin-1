@@ -37,7 +37,7 @@ a {
 
 
 /* BOX STYLING */
-$boxcolor: #dee2e6;
+$boxBorderColor: #dee2e6;
 
 @mixin border($top, $right, $bottom, $left) {
   border-top: $top;
@@ -45,7 +45,7 @@ $boxcolor: #dee2e6;
   border-bottom: $bottom;
   border-left: $left;
   border-style: solid;
-  border-color: #cccccc;
+  border-color: $boxBorderColor;
 }
 
 @mixin borderRadius($topLeft, $topRight, $botRight, $botLeft) {
@@ -63,7 +63,7 @@ $boxcolor: #dee2e6;
 $defaultRadius: 0.5rem;
 
 .box {
-  border: 1px solid $boxcolor;
+  border: 1px solid $boxBorderColor;
   background: #ffffff;
   border-radius: $defaultRadius;
   padding: 1rem;
@@ -86,7 +86,7 @@ $defaultRadius: 0.5rem;
 }
 
 .stacked-box {
-  border: 1px solid $boxcolor;
+  border: 1px solid $boxBorderColor;
   background: #ffffff;
   border-radius: $defaultRadius;
   width: 100%;
@@ -106,7 +106,6 @@ $defaultRadius: 0.5rem;
 
   &.inline {
     display: flex;
-    
 
     .box-item {
       width: 100%;

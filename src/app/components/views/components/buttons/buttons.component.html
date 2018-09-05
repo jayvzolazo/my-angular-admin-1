@@ -7,46 +7,25 @@
         <div class="box-item">
           <h6 class="box-title">Colors</h6>
           <div class="box-content">
-            <button type="button" class="mr-2 mb-3 btn btn-primary">Button</button>
-            <button type="button" class="mr-2 mb-3 btn btn-secondary">Button</button>
-            <button type="button" class="mr-2 mb-3 btn btn-success">Button</button>
-            <button type="button" class="mr-2 mb-3 btn btn-danger">Button</button>
-            <button type="button" class="mr-2 mb-3 btn btn-warning">Button</button>
-            <button type="button" class="mr-2 mb-3 btn btn-info">Button</button>
-            <button type="button" class="mr-2 mb-3 btn btn-light">Button</button>
-            <button type="button" class="mr-2 mb-3 btn btn-dark">Button</button>
-            <button type="button" class="mr-2 mb-3 btn btn-link">Button</button>
-            <button type="button" class="mr-2 mb-3 btn btn-default">Button</button>
+            <button type="button" *ngFor="let button of buttons.colors" class="mr-2 mb-3 btn btn-{{ button.class }}">
+              {{ button.label }}
+            </button>
           </div>
         </div>
         <div class="box-item">
           <h6 class="box-title">Disabled Buttons</h6>
           <div class="box-content">
-            <button type="button" class="mr-2 mb-3 btn btn-primary" disabled>Disabled</button>
-            <button type="button" class="mr-2 mb-3 btn btn-secondary" disabled>Disabled</button>
-            <button type="button" class="mr-2 mb-3 btn btn-success" disabled>Disabled</button>
-            <button type="button" class="mr-2 mb-3 btn btn-danger" disabled>Disabled</button>
-            <button type="button" class="mr-2 mb-3 btn btn-warning" disabled>Disabled</button>
-            <button type="button" class="mr-2 mb-3 btn btn-info" disabled>Disabled</button>
-            <button type="button" class="mr-2 mb-3 btn btn-light" disabled>Disabled</button>
-            <button type="button" class="mr-2 mb-3 btn btn-dark" disabled>Disabled</button>
-            <button type="button" class="mr-2 mb-3 btn btn-link" disabled>Disabled</button>
-            <button type="button" class="mr-2 mb-3 btn btn-default" disabled>Disabled</button>
+            <button type="button" *ngFor="let button of buttons.colors" class="mr-2 mb-3 btn btn-{{ button.class }}" disabled>
+              Disabled
+            </button>
           </div>
         </div>
         <div class="box-item">
           <h6 class="box-title">Outlined Buttons</h6>
           <div class="box-content">
-            <button type="button" class="mr-2 mb-3 btn btn-outline-primary">Outline</button>
-            <button type="button" class="mr-2 mb-3 btn btn-outline-secondary">Outline</button>
-            <button type="button" class="mr-2 mb-3 btn btn-outline-success">Outline</button>
-            <button type="button" class="mr-2 mb-3 btn btn-outline-danger">Outline</button>
-            <button type="button" class="mr-2 mb-3 btn btn-outline-warning">Outline</button>
-            <button type="button" class="mr-2 mb-3 btn btn-outline-info">Outline</button>
-            <button type="button" class="mr-2 mb-3 btn btn-outline-light">Outline</button>
-            <button type="button" class="mr-2 mb-3 btn btn-outline-dark">Outline</button>
-            <button type="button" class="mr-2 mb-3 btn btn-outline-link">Outline</button>
-            <button type="button" class="mr-2 mb-3 btn btn-outline-default">Outline</button>
+            <button type="button" *ngFor="let button of buttons.colors" class="mr-2 mb-3 btn btn-outline-{{ button.class }}">
+              Outline
+            </button>
           </div>
         </div>
         <div class="box-item">

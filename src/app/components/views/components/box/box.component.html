@@ -12,6 +12,23 @@
 
   <div class="row">
     <div class="col">
+      <h5>Inline Stacked Box</h5>
+      <div class="stacked-box inline">
+        <div class="box-item" *ngFor="let box of boxes">
+          <h6 class="box-title">{{ box.title }}</h6>
+          <div class="box-content">
+            {{ box.content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clearfix">&nbsp;</div>
+  <div class="clearfix">&nbsp;</div>
+
+  <div class="row">
+    <div class="col">
       <h5>Stacked Box</h5>
       <div class="stacked-box">
         <div class="box-item" *ngFor="let box of boxes">{{ box.title }}</div>
@@ -30,21 +47,8 @@
       </div>
     </div>
   </div>
-  
+
   <div class="clearfix">&nbsp;</div>
   <div class="clearfix">&nbsp;</div>
 
-  <div class="row">
-    <div class="col">
-      <h5>Inline Stacked Box</h5>
-      <div class="stacked-box inline">
-        <div class="box-item" *ngFor="let box of boxes">
-          <h6 class="box-title">{{ box.title }}</h6>
-          <div class="box-content">
-            {{ box.content }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
