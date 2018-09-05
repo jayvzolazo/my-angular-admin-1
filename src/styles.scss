@@ -154,3 +154,12 @@ $defaultRadius: 0.5rem;
   }
 } 
 /* END OF BUTTONS STYLING */
+
+.highcharts-container {
+  width: 100% !important;
+}
+
+/* SHADOW */
+.box-shadow {
+  box-shadow: 0 0 0.2rem $boxBorderColor;
+}

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ChartModule } from 'angular-highcharts';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -34,7 +35,8 @@ import { ButtonsComponent } from './components/views/components/buttons/buttons.
     NgbModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
