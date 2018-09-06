@@ -15,8 +15,10 @@ import { DashboardComponent } from './components/views/dashboard/dashboard.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutsComponent } from './components/views/layouts/layouts.component';
 import { ComponentsComponent } from './components/views/components/components.component';
-import { BoxComponent } from './components/views/components/box/box.component';
-import { ButtonsComponent } from './components/views/components/buttons/buttons.component';
+import { BoxComponent } from './components/views/components/general/box/box.component';
+import { ButtonsComponent } from './components/views/components/general/buttons/buttons.component';
+import { GeneralComponent } from './components/views/components/general/general.component';
+import { TooltipsPopoversComponent } from './components/views/components/general/tooltips-popovers/tooltips-popovers.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ButtonsComponent } from './components/views/components/buttons/buttons.
     LayoutsComponent,
     ComponentsComponent,
     BoxComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    GeneralComponent,
+    TooltipsPopoversComponent
   ],
   imports: [
     BrowserModule,
