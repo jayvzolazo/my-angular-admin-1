@@ -21,7 +21,7 @@ import {
 export class SidebarComponent implements OnInit {
 
   currentRoute: string;
-  componentsShown = false;
+  componentsShown: boolean;
 
   icon = {
     tachometerAlt: faTachometerAlt,
