@@ -1,0 +1,32 @@
+<div class="clearfix" id="modal">
+  <div class="row">
+    <div class="col">
+      <h6>Modals</h6>
+      <div class="box">
+        <button class="btn btn-md btn-outline-primary mr-2" (click)="openModal('', 'sm', content)">Launch small modal</button>
+        <button class="btn btn-md btn-outline-primary mr-2" (click)="openModal('', 'lg', content)">Launch large modal</button>
+        <button class="btn btn-md btn-outline-primary mr-2" (click)="openModal('modal-body-overflow', '', content)">Launch overflow modal</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h5 class="modal-title" id="modal-basic-title">Profile update</h5>
+    <button type="button" class="close" aria-label="Close" (click)="close('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+      ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-primary" (click)="close('Save click')">Save</button>
+    <button type="button" class="btn btn-outline-secondary" (click)="close('Close click')">Close</button>
+  </div>
+</ng-template>

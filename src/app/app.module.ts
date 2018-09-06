@@ -19,6 +19,7 @@ import { BoxComponent } from './components/views/components/general/box/box.comp
 import { ButtonsComponent } from './components/views/components/general/buttons/buttons.component';
 import { GeneralComponent } from './components/views/components/general/general.component';
 import { TooltipsPopoversComponent } from './components/views/components/general/tooltips-popovers/tooltips-popovers.component';
+import { ModalComponent } from './components/views/components/general/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TooltipsPopoversComponent } from './components/views/components/general
     BoxComponent,
     ButtonsComponent,
     GeneralComponent,
-    TooltipsPopoversComponent
+    TooltipsPopoversComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
