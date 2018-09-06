@@ -18,7 +18,7 @@ export class ModalComponent implements OnInit {
   openModal(style: string, modalSize: any, content): void {
     this.modalService.open(content, {
       ariaLabelledBy: 'modal-basic-title',
-      windowClass: 'app-modal',
+      windowClass: style,
       size: modalSize
     }).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
