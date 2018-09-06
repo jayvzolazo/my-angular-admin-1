@@ -41,6 +41,21 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.currentRoute = window.location.pathname;
+
+    this.setToggleMenu(this.currentRoute);
+  }
+
+  setToggleMenu(route: string): void {
+    const path = route.split('/');
+
+    switch (path[1]) {
+      case 'components':
+        this.componentsShown = true;
+        break;
+      default:
+        this.componentsShown = false;
+        break;
+    }
   }
 
   toggleComponents(): void {
