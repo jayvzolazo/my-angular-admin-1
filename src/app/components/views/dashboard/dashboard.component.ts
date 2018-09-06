@@ -49,7 +49,7 @@ export class DashboardComponent implements OnInit {
   }
 
   init() {
-    const chart = new Chart({
+    const chart = new Chart(<any>{
       chart: {
         type: 'column'
       },
@@ -60,7 +60,7 @@ export class DashboardComponent implements OnInit {
         enabled: false
       },
       legend: {
-        enabled: true
+        enabled: false
       },
       xAxis: {
         type: 'category'
@@ -79,7 +79,7 @@ export class DashboardComponent implements OnInit {
         }
       },
       series: [{
-        name: 'Line 1',
+        name: 'Browser Usage Statistics',
         colorByPoint: true,
         data: [
           {

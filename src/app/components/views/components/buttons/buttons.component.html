@@ -21,27 +21,11 @@
           </div>
         </div>
         <div class="box-item">
-          <h6 class="box-title">Outlined Buttons</h6>
-          <div class="box-content">
-            <button type="button" *ngFor="let button of buttons.colors" class="mr-2 mb-3 btn btn-outline-{{ button.class }}">
-              Outline
-            </button>
-          </div>
-        </div>
-        <div class="box-item">
           <h6 class="box-title">Button sizes</h6>
           <div class="box-content">
             <button type="button" class="mr-2 mb-3 btn btn-primary btn-lg">Button Large</button>
             <button type="button" class="mr-2 mb-3 btn btn-secondary btn-md">Button Medium</button>
             <button type="button" class="mr-2 mb-3 btn btn-success btn-sm">Button Small</button>
-          </div>
-        </div>
-        <div class="box-item">
-          <h6 class="box-title">Blocked Buttons</h6>
-          <div class="box-content">
-            <button type="button" class="mr-2 btn btn-primary btn-lg btn-block">Blocked Button</button>
-            <button type="button" class="mr-2 btn btn-outline-info btn-lg btn-block">Blocked Button</button>
-            <button type="button" class="mr-2 btn btn-default btn-lg btn-block">Blocked Button</button>
           </div>
         </div>
       </div>
@@ -75,7 +59,28 @@
             </label>
           </div>
         </div>
+        <div class="box-item">
+          <h6 class="box-title">Outlined Buttons</h6>
+          <div class="box-content">
+            <button type="button" *ngFor="let button of buttons.colors" class="mr-2 mb-3 btn btn-outline-{{ button.class }}">
+              Outline
+            </button>
+          </div>
+        </div>
+        <div class="box-item">
+          <h6 class="box-title">Blocked Buttons</h6>
+          <div class="box-content">
+            <button type="button" class="mr-2 btn btn-primary btn-lg btn-block">Blocked Button</button>
+            <button type="button" class="mr-2 btn btn-outline-info btn-lg btn-block">Blocked Button</button>
+            <button type="button" class="mr-2 btn btn-default btn-lg btn-block">Blocked Button</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="clearfix">&nbsp;</div>
+  <div class="clearfix">&nbsp;</div>
+  <div class="clearfix">&nbsp;</div>
+  <div class="clearfix">&nbsp;</div>
 </div>
